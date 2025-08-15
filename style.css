@@ -3,53 +3,100 @@
 
 body{
     font-family:"Metal Mania",sans-serif;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-.fotoPrincipal{
-    img{
-        height: auto;
-        width:20rem;
-
+.shop-geolocalization {
+    text-align: center;
+    padding: 10px;
+    background-color:black;
+    color:white;
+        option{
+        background-color: white;
+        color:black;
+        cursor: pointer;
+        font-size: 1rem;
+        font-family: arial;
     }
-    margin: 10px;
-    justify-self: center;
-
+    margin-bottom: 7px;
 }
 
-.container{
-    display:flex;
-    justify-content: center;
-    background-color: rgb(247, 75, 7);
+header-group {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 1000;
 }
+
+.SearchingLogo {
+    width: 30px;
+    height: auto;
+    }
+
+.parent {
+display: grid;
+grid-template-columns: 1fr 0fr 3fr 0fr 1fr;
+grid-template-rows: 1fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+background-color: rgb(247, 75, 7);
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 1 / 3 / 2 / 4; }
+.div3 { grid-area: 1 / 5 / 2 / 6; }
 
 .titulo{
-    text-align: center;
-    color: white;
-    font-size: 7rem;
-    margin: 0;
+    font-size: 4rem;
+    color: black;
+    font-family: "Metal Mania", sans-serif;
+    margin: 0 auto;
+    size: fit-content;
+    text-align: center;}
+
+.items {
+    display: flex;
+    align-items: right; 
+}
+
+.div1 button {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    border-color: black;
+    background-color: black;
+    cursor: pointer;
+    margin: 10px;
+    border: 1px solid white;
+    border-width: 1px;
 }
 
 .item {
-    background-color: rgb(247, 75, 7);
-    border: 1px rgb(247, 7, 7);
+    border: 1px solid rgb(0, 0, 0);
     margin: 5px;
-    padding:10px;
-    list-style:none;
+    padding: 10px;
+    list-style: none;
     align-items: center;
-        a {
-        text-decoration: none;
-        color: white;    
-    }
-      }
+    position: relative;
+}
+       
+.item a {
+    text-decoration: none;
+    color: black;
+}
 
       .form{
-        color: rgb(247, 75, 7);
-        font-size: 1.5rem;
-        font-weight: bold;
+        color: rgb(0, 0, 0);
+        font-size: 1rem;
+        border: 2px solid rgb(247, 75, 7);;
+        padding: 25px 30px;
+        border-radius: 15px;
+        width: 300px;
+        margin:30px;
+        align-items: center;
         button {
             background-color: rgb(247, 75, 7);
             color: white;
@@ -58,7 +105,7 @@ body{
             cursor: pointer;
             font-size: 1rem;
             border-radius: 5px;
-            font-family: sans-serif;
+            font-family: arial;        
         }
       }
 
@@ -80,22 +127,78 @@ footer{
 }
 
 .galeria {
+    margin: 20px;
       display: column;
       grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 15px;
-      justify-self: center;
+      gap: 20px;
+      justify-self: justify;
     }
 
 .galeria img {
-      width: 10rem;
+      width: 20rem;
       height: auto;
       border-radius: 8px;
       margin-right: 8px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.15);
       cursor: pointer;
       transition: transform 0.3s ease;
+      
     }
     
 .galeria img:hover {
       transform: scale(1.05);
-    }
+    } 
+
+.dark-mode {
+    background-color:black;
+    color: #ffffff;
+}
+
+.dark-mode button {
+    background-color: white;
+    color: #ffffff;
+    border: 1px solid black;
+    border-width: 1px;
+}
+
+.dark-mode .shop-geolocalization {
+    background-color:white;
+    color: black;
+}
+.dark-mode .titulo {
+    color: white;
+}
+
+.dark-mode form{
+    color: white;
+    border: 2px solid rgb(247, 75, 7);
+    padding: 25px 30px;
+    border-radius: 15px;
+    width: 300px;
+    margin:30px;
+    align-items: center;
+  
+}
+
+.dark-mode .item {
+    border: 1px solid white;
+    color: white;
+}
+
+.dark-mode .item a {
+    color: white;
+}   
+
+.dark-mode .parent {
+    background-color: rgb(247, 75, 7);
+}
+.dark-mode form button {
+    background-color: rgb(247, 75, 7);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    font-family: arial;        
+}

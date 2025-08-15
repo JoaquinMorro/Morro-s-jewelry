@@ -8,20 +8,71 @@
 </head>
 <body>
     <header>
-        <ul class="container">
-            <li class="item"><a href="index.html">Pagina Principal</a></li>
-            <li class="item"><a href="inicio-sesion.html">Inicio sesion</a> </li>
-            <li class="item"><a href="registro.html">Registro</a></li>
-        </ul>
+    <div class="shop-geolocalization">
+<label for="paises">Selecciona una region listada:</label>      
+<select id="paises" name="paises">
+  <option value="Argentina">Argentina</option>
+      <option value="USA">USA</option>
+      <option value="Mexico">Mexico</option>
+      <option value="Spain">Spain</option>
+      <option value="Inglaterra">Inglaterra</option>
+      <option value="Italia">Italia</option>
+      <option value="Francia">Francia</option>
+      <option value="Alemania">Alemania</option>
+      <option value="Brasil">Brasil</option>
+      <option value="Chile">Chile</option>
+      <option value="Colombia">Colombia</option>
+      <option value="Peru">Peru</option>
+      <option value="Uruguay">Uruguay</option>
+      <option value="Venezuela">Venezuela</option>
+      <option value="Ecuador">Ecuador</option>
+      <option value="Bolivia">Bolivia</option>
+      <option value="Paraguay">Paraguay</option>
+      <option value="Costa Rica">Costa Rica</option>
+      <option value="Panama">Panama</option>
+      <option value="Puerto Rico">Puerto Rico</option>
+      <option value="Cuba">Cuba</option>
+      <option value="Dominican Republic">Dominican Republic</option>
+      <option value="Honduras">Honduras</option>
+      <option value="Guatemala">Guatemala</option>  
+      <option value="Nicaragua">Nicaragua</option>
+      <option value="El Salvador">El Salvador</option>
+      <option value="Jamaica">Jamaica</option>
+      <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+      <option value="Belize">Belize</option>
+      <option value="Barbados">Barbados</option>
+      <option value="Bahamas">Bahamas</option>
+      <option value="Saint Lucia">Saint Lucia</option>
+      <option value="Grenada">Grenada</option>
+      <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+      <option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenade</option>
+    </select>
+    </div>
+  <nav class="parent">
+    <script src="index.js"></script>
+    <div class="div1" >
+        <button onclick=darkMode()></button>
+        </div>
+      <div class="div2">
+        <h1 class="titulo">Morro's</h1>
+      </div>
+      <div class="div3">
+      <ul class="items">
+        <li class="item"><a href="index.html">Pagina Principal</a></li>
+        <li class="item"><a href="inicio-sesion.html">Inicio sesion</a></li>
+        <li class="item"><a href="registro.html">Registro</a></li>
+      </ul>
+      </div>
+  </nav>
     </header>
-        <div class="form">
-        <form action="" method="GET/POST">
+    <main>
+        <form action="" method="GET/POST" class="form">
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required><br><br>
             <label for="apellido">Apellido:</label> 
             <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido" required><br><br>
             <label for="edad">Edad</label>
-            <input type="edad" id="edad" name="edad" placeholder="Ingrese su edad" required><br><br>
+            <input type="number" id="edad" name="edad" placeholder="Ingrese su edad" required><br><br>
             <label for="Fecha de nacimiento">Fecha de nacimiento</label>
             <input type="date" id="fechaNacimiento" name="fechaNacimiento" required><br><br>
             <label for="email">Email:</label>
@@ -30,14 +81,13 @@
             <input type="password" id="password" name="password" placeholder="Ingrese una contraseña" required><br><br>
             <button type="submit">Enviar</button>
         </form>    
-    </div>
+  </main>
     <footer>
-        <p>Copyright © 2025 Web Morro y lauti</p>
+        <p>Copyright © 2025 Morrone Joaquin Ulises</p>
         <nav>
           <a href="#">Política de Privacidad</a>
           <a href="#">Términos de Servicio</a>
         </nav>
       </footer>
 </body>
-
 </html>
