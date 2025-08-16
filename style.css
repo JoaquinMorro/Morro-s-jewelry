@@ -23,12 +23,14 @@ body{
     margin-bottom: 7px;
 }
 
-header-group {
+header{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 10px 0;
+  
     z-index: 1000;
+    position:fixed;
+
 }
 
 .SearchingLogo {
@@ -38,11 +40,13 @@ header-group {
 
 .parent {
 display: grid;
+justify-self: center;
 grid-template-columns: 1fr 0fr 3fr 0fr 1fr;
 grid-template-rows: 1fr;
 grid-column-gap: 0px;
 grid-row-gap: 0px;
 background-color: rgb(247, 75, 7);
+ width: 100%;
 }
 
 .div1 { grid-area: 1 / 1 / 2 / 2; }
@@ -60,6 +64,7 @@ background-color: rgb(247, 75, 7);
 .items {
     display: flex;
     align-items: right; 
+    padding-right: 20px;
 }
 
 .div1 button {
@@ -127,22 +132,34 @@ footer{
 }
 
 .galeria {
-    margin: 20px;
-      display: column;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 20px;
-      justify-self: justify;
-    }
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 0px;
+}
+
+.galeria-div1 { grid-area: 1 / 1 / 2 / 2; 
+margin: 50px;}
+.galeria-div2{ grid-area: 1 / 2 / 2 / 3;
+margin: 50px;}
+.galeria-div3{ grid-area: 1 / 3 / 2 / 4;
+margin: 50px; }
+.galeria-div4 { grid-area: 1 / 4 / 2 / 5;
+margin: 50px; }
+
+.galeria-queue{
+display: column;
+}
 
 .galeria img {
-      width: 20rem;
+    margin:10px;
+      width: 18rem;
       height: auto;
       border-radius: 8px;
       margin-right: 8px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.15);
       cursor: pointer;
       transition: transform 0.3s ease;
-      
     }
     
 .galeria img:hover {
