@@ -36,6 +36,7 @@ main{
     margin-top: 100px;
     padding: 20px;
     background-color: white;
+    justify-items: center;
 }
 .SearchingLogo {
     width: 30px;
