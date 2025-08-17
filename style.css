@@ -82,6 +82,13 @@ background-color: rgb(247, 75, 7);
     margin: 10px;
     border: 1px solid white;
     border-width: 1px;
+    transition: color;
+    transition-duration: 0.5;
+    transition-timing-function: ease;
+}
+.div1 button:hover {
+    background-color: white;
+    color: black;
 }
 
 .item {
@@ -96,6 +103,13 @@ background-color: rgb(247, 75, 7);
 .item a {
     text-decoration: none;
     color: black;
+    cursor: pointer;
+    transition-property: color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+.item a:hover{
+    color:white
 }
 
       .form{
@@ -115,8 +129,14 @@ background-color: rgb(247, 75, 7);
             cursor: pointer;
             font-size: 1rem;
             border-radius: 5px;
-            font-family: arial;        
+            font-family: arial;
+            transition: color;
+            transition-duration: 0.3s;
+            transition-timing-function: ease;        
         }
+      }
+      .form button:hover{
+        background-color:  rgb(156, 49, 6);
       }
 
 footer{
@@ -227,4 +247,11 @@ display: column;
 .dark-mode main {
     background-color: black;
     color: white;
+}
+.dark-mode .div1 button:hover {
+ background-color:black;
+    color: white;   
+}
+.dark-mode .item a:hover{
+    color: black;
 }
