@@ -27,13 +27,10 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-  
-    z-index: 1000;
     position:fixed;
-
 }
 main{
-    margin-top: 100px;
+    margin-top: 120px;
     padding: 20px;
     background-color: white;
     justify-items: center;
@@ -52,7 +49,6 @@ grid-column-gap: 0px;
 grid-row-gap: 0px;
 background-color: rgb(247, 75, 7);
  width: 100%;
- 
 }
 
 .div1 { grid-area: 1 / 1 / 2 / 2; }
@@ -121,7 +117,7 @@ background-color: rgb(247, 75, 7);
 }
 
       .form{
-        color: rgb(0, 0, 0);
+        text-decoration-color: rgb(0, 0, 0);
         font-size: 1rem;
         border: 2px solid rgb(247, 75, 7);;
         padding: 25px 30px;
@@ -151,8 +147,9 @@ footer{
     text-align: center;
     background-color: rgb(247, 75, 7);
     padding: 10px;
-    position: fixed;
-    bottom: 0;
+    position: bottom;
+    align-items: bottom;
+    bottom: 0px;
     width: 100%;
     font-family: Arial, sans-serif;
 }
@@ -186,7 +183,7 @@ display: column;
 
 .galeria img {
     margin:10px;
-      width: 18rem;
+      width: 15rem;
       height: auto;
       border-radius: 8px;
       margin-right: 8px;
@@ -263,3 +260,4 @@ display: column;
 .dark-mode .item a:hover{
     color: black;
 }
+
